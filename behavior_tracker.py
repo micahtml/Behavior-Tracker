@@ -26,6 +26,7 @@ excel_file = 'malachi_data_tracker.xlsx'
 df = pd.read_excel(excel_file)
 print(df)
 
+size = [20, 40, 60, 80, 100, 80, 60, 40, 20, 40]
 df['Duration'] = df['Duration'].astype(int)
-fig = px.scatter(df, x='Behavior', y='Date', color='Possible Trigger', size='Duration', size_max=10)
+fig = px.scatter(df, x='Behavior', y='Date', color='Possible Trigger', size='Duration')
 fig.show()
