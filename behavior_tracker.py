@@ -30,4 +30,4 @@ size = [20, 40, 60, 80, 100, 80, 60, 40, 20, 40]
 
 df['Duration'] = df['Duration'].astype(float)
 fig = px.scatter(df, x='Date', y='Behavior', color='Possible Trigger', hover_name='Weekday')
-fig.show()
+fig.show() 
